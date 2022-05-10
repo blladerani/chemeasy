@@ -18,4 +18,12 @@ export default [
     },
     info: "Sülfürik(VI) asit ya da halk arasında bilinen ismi ile zaç yağı, H2SO4, güçlü bir mineral asididir. Olası kaşifi 8. yüzyıl simyacısı Cabir bin Hayyan tarafından yenime uğratıcı, renksiz ve yoğunluğu yüksek sıvı olarak tanımlanmıştır.[1] Suda her konsantrasyonda çözünebilir. Büyük ölçüde korozif oluşu, güçlü asidik yapısından ve dehidrasyon özelliğinden kaynaklanmaktadır. ",
   },
+  {
+    formula: "HCl",
+    name: "Hidroklorik Asit",
+    elements: {
+      H: 1,
+      Cl: 1
+    }
+  }
 ];

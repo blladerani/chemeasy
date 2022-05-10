@@ -14,4 +14,9 @@ export default [
     symbol: "S",
     name: "Kükürt",
   },
+  {
+    number: 17,
+    symbol: "Cl",
+    name: "Klor"
+  }
 ];
