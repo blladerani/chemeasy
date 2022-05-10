@@ -16,6 +16,6 @@ export default [
       S: 1,
       O: 4,
     },
-    info: "Kükürt doğada yaygın olarak bulunan bir elementtir (yer kürenin % 0,06'sını oluşturur). Özellikle en önemli kükürt yataklarının yer aldığı Sicilya, Louisiana ve Japonya'da eski volkanların yakınında, alçı taşı ya da kireç taşı katmanları arasında doğal halde bulunur. Çoğunlukla metallerle birleşmiş olarak görülür. Demir, bakır, kurşun ve çinko sülfürler, bu metallerin en önemli cevridir. Kalsiyum sülfatı ya da başka deyişle alçıtaşını saymak gerekir. ",
+    info: "Sülfürik(VI) asit ya da halk arasında bilinen ismi ile zaç yağı, H2SO4, güçlü bir mineral asididir. Olası kaşifi 8. yüzyıl simyacısı Cabir bin Hayyan tarafından yenime uğratıcı, renksiz ve yoğunluğu yüksek sıvı olarak tanımlanmıştır.[1] Suda her konsantrasyonda çözünebilir. Büyük ölçüde korozif oluşu, güçlü asidik yapısından ve dehidrasyon özelliğinden kaynaklanmaktadır. ",
   },
 ];

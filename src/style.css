@@ -14,11 +14,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#page-header {
+#page-header a {
   height: 80px;
   color: #c2410c;
   font-size: 3rem;
   margin-left: 30px;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 40px;
 }
 
 #page-main {

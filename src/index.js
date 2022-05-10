@@ -101,6 +101,11 @@ function objectsEqual(o1, o2) {
       return false;
     }
   }
+  for (const key in o2) {
+    if (o2[key] != +o1[key]) {
+      return false;
+    }
+  }
   return true;
 }
 
