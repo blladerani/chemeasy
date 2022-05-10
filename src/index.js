@@ -1,37 +1,8 @@
 import "./style.css";
 
-let elements = [
-  {
-    number: 1,
-    symbol: "H",
-    name: "Hidrojen",
-  },
-  {
-    number: 8,
-    symbol: "O",
-    name: "Oksijen",
-  },
-];
+import elements from "./elements";
+import compounds from "./compounds";
 
-let compounds = [
-  {
-    formula: "H2O",
-    name: "su",
-    elements: {
-      H: 2,
-      O: 1,
-    },
-    info: "Su, Dünya üzerinde bol miktarda bulunan ve tüm canlıların yaşaması için vazgeçilmez olan, kokusuz ve tatsız bir kimyasal bileşiktir.[4] Sıklıkla renksiz olarak tanımlanmasına rağmen kızıl dalga boylarında ışığı hafifçe emmesi nedeniyle mavi bir renge sahiptir.[4] ",
-  },
-  {
-    formula: "H2O3",
-    name: "nig",
-    elements: {
-      H: 2,
-      O: 3,
-    },
-  },
-];
 const elementsSection = document.querySelector(".elements");
 for (const element of elements) {
   elementsSection.innerHTML += `<div class="element" data-symbol="${element.symbol}" draggable="true">
@@ -40,7 +11,7 @@ for (const element of elements) {
   <div class="name">${element.name}</div>
   <div class="controls hidden">
     <div class="minus">-</div>
-    <div class="remove">R</div>
+    <img class="remove" src="trash.png" />
     <div class="plus">+</div>
   </div>
   <div class="count hidden">1</div>
@@ -112,14 +83,14 @@ function checkCompound() {
     const symbol = e.getAttribute("data-symbol");
     elementList[symbol] = +e.getAttribute("data-count");
   });
-
+  removeInfo();
   for (const comp in compounds) {
     const elementsList = compounds[comp].elements;
     if (objectsEqual(elementsList, elementList)) {
-      console.log(comp);
       compoundsSection
         .querySelector(`.compound[data-index="${comp}"]`)
         .classList.add("completed");
+      displayInfo(comp);
     }
   }
 }
@@ -155,7 +126,6 @@ elementMinusButtons.forEach((e) => {
     } else {
       elem.setAttribute("data-count", elem.getAttribute("data-count") - 1);
       elem.lastElementChild.textContent = elem.getAttribute("data-count");
-      elem.querySelector(".count").textContent = "0";
     }
     checkCompound();
   });
@@ -171,3 +141,14 @@ elementPlusButtons.forEach((e) => {
     checkCompound();
   });
 });
+
+const infoSection = document.querySelector(".infos");
+
+function displayInfo(index) {
+  console.log(compounds[index].info);
+  infoSection.textContent = compounds[index].info;
+}
+
+function removeInfo() {
+  infoSection.textContent = "";
+}
