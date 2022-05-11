@@ -5,7 +5,7 @@ import compounds from "./compounds";
 
 const elementsSection = document.querySelector(".elements");
 for (const element of elements) {
-  elementsSection.innerHTML += `<div class="element" data-symbol="${element.symbol}" draggable="true">
+  elementsSection.innerHTML += `<div class="element ${element.type}" data-symbol="${element.symbol}" draggable="true">
   <div class="number">${element.number}</div>
   <div class="symbol">${element.symbol}</div>
   <div class="name">${element.name}</div>
@@ -117,6 +117,7 @@ elementRemoveBtns.forEach((e) => {
     elem.querySelector(".controls").classList.add("hidden");
     elem.querySelector(".count").textContent = "0";
     elementsSection.append(elem);
+    checkCompound();
   });
 });
 
@@ -150,10 +151,31 @@ elementPlusButtons.forEach((e) => {
 const infoSection = document.querySelector(".infos");
 
 function displayInfo(index) {
-  console.log(compounds[index].info);
-  infoSection.textContent = compounds[index].info;
+  infoSection
+    .querySelector(".l-image")
+    .setAttribute("src", compounds[index].info.img1);
+  infoSection
+    .querySelector(".r-image")
+    .setAttribute("src", compounds[index].info.img2);
+  infoSection.classList.remove("hidden");
+  infoSection.querySelector(".compound-header").innerHTML = compounds[
+    index
+  ].formula
+    .split("")
+    .map((e) => {
+      if (!isNaN(+e)) {
+        return `<sub>${e}</sub>`;
+      } else {
+        return e;
+      }
+    })
+    .join("");
+  infoSection.querySelector(".compound-name").textContent =
+    compounds[index].name;
+  infoSection.querySelector(".compound-info").textContent =
+    compounds[index].info.text;
 }
 
 function removeInfo() {
-  infoSection.textContent = "";
+  infoSection.classList.add("hidden");
 }
