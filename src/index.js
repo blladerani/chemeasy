@@ -6,7 +6,11 @@ import compounds from "./compounds";
 const elementsSection = document.querySelector(".elements");
 for (const element of elements) {
   elementsSection.innerHTML += `<div class="element ${element.type}" data-symbol="${element.symbol}" draggable="true">
+  <div class="element-top">
   <div class="number">${element.number}</div>
+  <div class="weight">(${element.weight})</div>
+  </div>
+  
   <div class="symbol">${element.symbol}</div>
   <div class="name">${element.name}</div>
   <div class="controls hidden">

@@ -210,3 +210,9 @@ body {
   opacity: 0.6;
   margin-bottom: 50px;
 }
+
+.element-top {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
