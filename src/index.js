@@ -26,7 +26,7 @@ const compoundsSection = document.querySelector(".compounds");
 for (const compound of compounds) {
   compoundsSection.innerHTML += `<div class="compound" data-index="${compounds.indexOf(
     compound
-  )}">${compound.formula}</div>`;
+  )}">${indiceFormula(compound.formula)}</div>`;
 }
 const elementElements = document.querySelectorAll(".element");
 const dropSection = document.querySelector(".element-drop");
@@ -162,9 +162,22 @@ function displayInfo(index) {
     .querySelector(".r-image")
     .setAttribute("src", compounds[index].info.img2);
   infoSection.classList.remove("hidden");
-  infoSection.querySelector(".compound-header").innerHTML = compounds[
-    index
-  ].formula
+  infoSection.querySelector(".compound-header").innerHTML = indiceFormula(
+    compounds[index].formula
+  );
+
+  infoSection.querySelector(".compound-name").textContent =
+    compounds[index].name;
+  infoSection.querySelector(".compound-info").textContent =
+    compounds[index].info.text;
+}
+
+function removeInfo() {
+  infoSection.classList.add("hidden");
+}
+
+function indiceFormula(formula) {
+  return formula
     .split("")
     .map((e) => {
       if (!isNaN(+e)) {
@@ -174,12 +187,4 @@ function displayInfo(index) {
       }
     })
     .join("");
-  infoSection.querySelector(".compound-name").textContent =
-    compounds[index].name;
-  infoSection.querySelector(".compound-info").textContent =
-    compounds[index].info.text;
-}
-
-function removeInfo() {
-  infoSection.classList.add("hidden");
 }
