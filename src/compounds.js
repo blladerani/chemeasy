@@ -79,4 +79,60 @@ export default [
       img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Sulfur-dioxide-3D-vdW.png/200px-Sulfur-dioxide-3D-vdW.png",
     },
   },
+  {
+    formula: "C6H12O6",
+    name: "Glukoz",
+    elements: {
+      C: 6,
+      H: 12,
+      O: 6,
+    },
+    info: {
+      text: "Basit bir şeker (veya monosakkarit) olan glukoz (veya glikoz veya glükoz) yaşam için en önemli karbonhidratlardan biridir. Hücreler onu bir enerji kaynağı ve metabolik reaksiyonlarda bir ara ürün olarak kullanırlar. Glukoz fotosentezin ana ürünlerinden biridir ve hücresel solunum onunla başlar. ",
+      img1: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/D-L-_Glucose_farbig_V1.png/250px-D-L-_Glucose_farbig_V1.png",
+      img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/D-glucose-chain-3D-balls.png/120px-D-glucose-chain-3D-balls.png",
+    },
+  },
+  {
+    formula: "Al2SO3",
+    name: "Alüminyum Sülfür",
+    elements: {
+      Al: 2,
+      S: 1,
+      O: 3,
+    },
+    info: {
+      text: "Alüminyum sülfür (Al2S3) son enerji seviyesindeki elektronları kaybederek ve bir katyon haline getirerek metalik alüminyum oksidasyonu ve metalik sülfürün indirgenmesi ile oluşan ve alüminyumdan elde edilen elektronları kazanarak oluşan açık gri bir kimyasal bileşiktir. ",
+      img1: "https://ar.thpanorama.com/img/images_1/sulfuro-de-aluminio-al2s3-estructura-qumica-nomenclatura-propiedades.jpg",
+      img2: "https://ar.thpanorama.com/img/images_1/sulfuro-de-aluminio-al2s3-estructura-qumica-nomenclatura-propiedades.png",
+    },
+  },
+  {
+    formula: "NaCl",
+    name: "Sodyum Klorür",
+    elements: {
+      Na: 1,
+      Cl: 1,
+    },
+
+    info: {
+      text: "Sodyum klorür, yaygın olarak 'tuz' ismiyle bilinen (deniz tuzu, aynı zamanda diğer kimyasal tuzları da içerir) kimyasal formülü NaCl; 1/1 oranında sodyum ve klorür iyonları olan iyonik bileşik. Molar kütleleri sırasıyla 22.99 ve 35.45 g/moldur. 100 g NaCl, 39.34 g Na ve 60.66 g Cl içerir. Sodyum klorür, deniz suyunun tuzluluğundan ve birçok çok hücreli organizmanın hücre dışı sıvısından en çok sorumlu olan tuzdur . Yenilebilir sofra tuzu biçiminde yaygın olarak bir çeşni ve gıda koruyucusu olarak kullanılır. Birçok endüstriyel proseste büyük miktarlarda sodyum klorür kullanılır ve daha ileri kimyasal sentezler için hammadde olarak kullanılan sodyum ve klor bileşiklerinin ana kaynağıdır. Sodyum klorürün ikinci bir ana uygulaması donma sıcaklığı altındaki havalarda yolların buzunun çözülmesidir. ",
+      img1: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Table_salt_with_salt_shaker_V1.jpg/220px-Table_salt_with_salt_shaker_V1.jpg",
+      img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/NaCl_bonds.svg/220px-NaCl_bonds.svg.png",
+    },
+  },
+  {
+    formula: "CuSO4",
+    name: "Bakır (II) Sülfat",
+    elements: {
+      Cu: 1,
+      S: 1,
+      O: 4,
+    },
+    info: {
+      text: `Küprik sülfat ya da bakır sülfat olarak da denilen Bakır(II) sülfat, kimyasal formülü CuSO4 olan bir kimyasal bileşiktir. Bu tuzun hidrasyon derecelerine bağlı olarak bir dizi farklı bileşikleri mevcuttur. Susuz formu soluk yeşil ya da grimsi beyaz bir toz olmasına karşın en çok bilinen pentahidrat (CuSO4•5H2O) formu, parlak mavi renktedir. Çok az miktardaki CuSO4•5H2O çevreye çok zehirlidir, gözleri ve cildi tahriş eder ve yutulduğunda zararlı da olabilir. Oktahedral moleküler geometriye ve paramanyetik özelliğe sahip olan bakır(II) sülfat ekzotermik olarak suda çözünürek [Cu(H2O)6]2+ kompleksini oluşturur. Bakır(II) sülfat "mavi vitriyol", "göztaşı" ve "göktaşı" olarak da bilinmektedir. `,
+      img1: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Copper_sulfate.jpg/150px-Copper_sulfate.jpg",
+      img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Copper%28II%29-sulfate-3D-vdW.png/120px-Copper%28II%29-sulfate-3D-vdW.png",
+    },
+  },
 ];

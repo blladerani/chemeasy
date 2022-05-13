@@ -35,6 +35,13 @@ export default [
     weight: 16,
   },
   {
+    number: 11,
+    symbol: "Na",
+    name: "Sodyum",
+    type: "metal",
+    weight: 23,
+  },
+  {
     number: 13,
     symbol: "Al",
     name: "Aluminyum",
@@ -54,5 +61,12 @@ export default [
     name: "Klor",
     type: "ametal",
     weight: 35,
+  },
+  {
+    number: 29,
+    symbol: "Cu",
+    name: "Bakır",
+    type: "metal",
+    weight: 64,
   },
 ];
