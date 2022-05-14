@@ -1,3 +1,3 @@
 # chemeasy
-##Github Pages On:
+## Github Pages On:
   https://blladerani.github.io/chemeasy/dist
