@@ -135,4 +135,18 @@ export default [
       img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Copper%28II%29-sulfate-3D-vdW.png/120px-Copper%28II%29-sulfate-3D-vdW.png",
     },
   },
+  {
+    formula: "Na2CO3",
+    name: "Sodyum Karbonat",
+    elements: {
+      Na: 2,
+      C: 1,
+      O: 3,
+    },
+    info: {
+      text: `Sodyum karbonat, (çamaşır sodası, kristal soda ve soda külü olarak da bilinir) Na2CO3 formülüne sahip değişik hidratları olan bir inorganik bileşiktir. Bütün formları beyaz, suda çözünür tuzlardır. Tüm formları güçlü bir alkali tada sahiptir ve suda orta derecede alkali çözeltiler verir. Tarihsel olarak sodyum bakımından zengin göl sularından veya sodyum bakımından zengin topraklarda yetişen bitkilerin küllerinden çıkarıldı. Bu sodyum açısından zengin bitkilerin külleri, odun küllerinden (bir zamanlar potasa üretmek için kullanılıyordu) belirgin şekilde farklı olduğundan, sodyum karbonat "soda külü" olarak bilinir hale geldi.[12] Günümüzde ise, Solvay işlemi ile sodyum klorür ve kireç taşından büyük miktarlarda üretilmektedir. `,
+      img1: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Uhli%C4%8Ditan_sodn%C3%BD.JPG/200px-Uhli%C4%8Ditan_sodn%C3%BD.JPG",
+      img2: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Sodium_carbonate.svg/120px-Sodium_carbonate.svg.png",
+    },
+  },
 ];
